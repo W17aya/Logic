@@ -8,34 +8,22 @@ public class Exam06 {
 
         Scanner input = new Scanner(System.in);
 
-        int i, j, k, pagar;
-        boolean ulang = true;
 
-
-        Scanner baca = new Scanner(System.in);
-
-        while (ulang) {
-            System.out.print("Sample Input? ");
-            pagar = baca.nextInt();
-
-            i = 1;
-            while (i <= pagar) {
-                k = pagar;
-
-                while (k > i) {
-                    System.out.print("  ");
-                    k--;
-                }
-
-                j = 1;
-                while (j <= i) {
-                    System.out.print("#");
-                    j++;
-                }
-
-                i++;
-                System.out.println("");
+        System.out.println("Enter a number");
+        int n = input.nextInt();
+        int i, j;
+        for (i = 0; i < n; i++) //looping jumlah baris
+        {
+            for (j = 2 * (n - i); j >= 0; j--) // inner loop for spaces
+            {
+                System.out.print(" "); // print spasi
             }
+            for (j = 0; j <= i; j++) //  loop dalam kolom
+            {
+                System.out.print("#"); // print pagar
+            }
+            System.out.println(); // ending line
         }
+
     }
 }
