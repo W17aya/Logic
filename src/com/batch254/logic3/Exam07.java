@@ -1,37 +1,33 @@
-//package com.batch254.logic3;
-//
-//
-//import java.util.Scanner;
-//
-//
-//public class Exam07 {
-//
-//    public static void Resolve() {
-//
-//            Scanner in = new Scanner(System.in);
-//
-//            sout
-//
-//            long min = Long.MAX_VALUE;
-//            long max = 0;
-//            long sum = 0;
-//            for(int i=0; i<5; i++)
-//            {
-//                long curr = in.nextLong();
-//                if(max < curr)
-//                {
-//                    max = curr;
-//                }
-//                if(min > curr)
-//                {
-//                    min = curr;
-//                }
-//
-//                sum += curr;
-//            }
-//            long minSum = sum - max;//Removes the largest of the 5 numbers to get the min sum
-//            long maxSum = sum - min;//Removes the smallest of the 5 numbers to get the max sum
-//            System.out.println(minSum + " " + maxSum);
-//        }
-//
-//    }
+package com.batch254.logic3;
+
+
+import java.util.Scanner;
+
+
+public class Exam07 {
+
+    public static void Resolve() {
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter set of number:");
+        String text = input.nextLine();
+
+        int[]value = Utility.StringToArrayInt(text);
+        int Max =0;
+        int Min = 0;
+
+        for (int i = 0; i <value.length; i++) {
+            if ( i != 0){
+                Max += value[i];
+            }
+            if (i !=( value.length -1))
+            {
+                Min += value[i];
+            }
+        }
+
+        Utility.PrintInt(Min);
+        Utility.PrintInt(Max);
+    }
+}

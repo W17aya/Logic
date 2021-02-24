@@ -37,9 +37,9 @@ public class Main {
                 case 6:
                     Exam06.Resolve();
                     break;
-//                case 7:
-//                    Exam07.Resolve();
-//                    break;
+                case 7:
+                    Exam07.Resolve();
+                    break;
                 case 8:
                     Exam08.Resolve();
                     break;

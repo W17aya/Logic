@@ -26,6 +26,13 @@ public class Utility {
             return result;
         }
     }
+
+    public static void PrintInt(Integer request) {
+        System.out.println(request);
+        System.out.println("========================");
+    }
+
+
 //      public static void PrintInt(Integer request){
 //            System.out.println(request);
 //            System.out.println("=====================");
