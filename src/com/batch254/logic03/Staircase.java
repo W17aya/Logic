@@ -2,7 +2,7 @@ package com.batch254.logic03;
 
 import java.util.Scanner;
 
-public class Exam06 {
+public class Staircase {
 
     public static void Resolve() {
 

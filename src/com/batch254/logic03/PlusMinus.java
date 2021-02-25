@@ -2,13 +2,10 @@ package com.batch254.logic03;
 
 import java.util.Scanner;
 
-public class Exam05 {
+public class PlusMinus {
             public static void Resolve () {
                 Scanner input = new Scanner(System.in);
 
-                //input length
-                System.out.println("input length: ");
-                int length = input.nextInt();
 
                 input.nextLine();
 
@@ -24,7 +21,6 @@ public class Exam05 {
 
                 System.out.println();
 
-                double akhir;
                 int negatif = 0;
                 int positif = 0;
                 int zero = 0;

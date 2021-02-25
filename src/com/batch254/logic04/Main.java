@@ -1,6 +1,7 @@
-package com.batch254.logic03;
+package com.batch254.logic04;
 
 import BirthdayCakeCandle.Exam08;
+import com.batch254.logic03.*;
 
 import java.util.Scanner;
 

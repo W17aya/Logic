@@ -5,7 +5,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Exam02 {
+public class TimeConversion {
     public static void Resolve() {
         String input = "24/02/2021 07:05:48 PM";
 

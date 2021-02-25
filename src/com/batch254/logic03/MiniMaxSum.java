@@ -4,7 +4,7 @@ package com.batch254.logic03;
 import java.util.Scanner;
 
 
-public class Exam07 {
+public class MiniMaxSum {
 
     public static void Resolve() {
 

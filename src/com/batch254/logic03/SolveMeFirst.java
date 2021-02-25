@@ -2,7 +2,7 @@ package com.batch254.logic03;
 
 import java.util.Scanner;
 
-public class Exam01 {
+public class SolveMeFirst {
     public static void Resolve() {
 
 

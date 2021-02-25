@@ -2,7 +2,7 @@ package com.batch254.logic03;
 
 import java.util.Scanner;
 
-public class Exam03 {
+public class SimpleArraySum {
     public static void Resolve () {
 
         Scanner input = new Scanner(System.in);
@@ -18,7 +18,6 @@ public class Exam03 {
         }
 
         System.out.println();
-
         int jumlah = 0;
 
         for (int j = 0; j < numbers.length; j++ ){
