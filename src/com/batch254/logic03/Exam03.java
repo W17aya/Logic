@@ -1,4 +1,4 @@
-package com.batch254.logic3;
+package com.batch254.logic03;
 
 import java.util.Scanner;
 

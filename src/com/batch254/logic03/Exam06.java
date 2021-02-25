@@ -1,4 +1,4 @@
-package com.batch254.logic3;
+package com.batch254.logic03;
 
 import java.util.Scanner;
 
@@ -12,6 +12,8 @@ public class Exam06 {
         System.out.println("Enter a number");
         int n = input.nextInt();
         int i, j;
+
+
         for (i = 0; i < n; i++) //looping jumlah baris
         {
             for (j = 2 * (n - i); j >= 0; j--) // inner loop for spaces

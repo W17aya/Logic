@@ -1,4 +1,4 @@
-package com.batch254.logic3;
+package com.batch254.logic03;
 
 import java.util.Scanner;
 
@@ -49,9 +49,6 @@ public class Main {
 //                case 10:
 //                    Exam10.Resolve();
 //                    break;
-                default:
-                    System.out.println("SOAL TIDAK DITEMUKAN");
-                    break;
 //                case 11:
 //                    Mean.Resolve;
 //                    break;
@@ -61,6 +58,9 @@ public class Main {
 //                    case 13:
 //                    Modulus.Resolve;
 //                    break;
+                default:
+                    System.out.println("SOAL TIDAK DITEMUKAN");
+                    break;
             }
 
             System.out.println("LANJUTKAN?");

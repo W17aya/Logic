@@ -1,4 +1,4 @@
-package com.batch254.logic3;
+package com.batch254.logic03;
 
 public class Utility {
     public static void PrintArray2D(int[][] array2d){
