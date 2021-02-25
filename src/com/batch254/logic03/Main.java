@@ -56,8 +56,11 @@ public class Main {
                     Exam12.Resolve();
                     break;
 //                 case 13:
-//                    Modulus.Resolve;
+//                    Exam13.Resolve();
 //                    break;
+                case 14:
+                    Exam14.Resolve();
+                    break;
                 default:
                     System.out.println("SOAL TIDAK DITEMUKAN");
                     break;

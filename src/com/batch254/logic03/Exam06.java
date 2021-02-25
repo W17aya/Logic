@@ -8,24 +8,21 @@ public class Exam06 {
 
         Scanner input = new Scanner(System.in);
 
-
         System.out.println("Enter a number");
-        int n = input.nextInt();
-        int i, j;
+        int length = input.nextInt();
 
-
-        for (i = 0; i < n; i++) //looping jumlah baris
-        {
-            for (j = 2 * (n - i); j >= 0; j--) // inner loop for spaces
-            {
-                System.out.print(" "); // print spasi
+        for (int i = 0; i < length; i++) {
+            for (int j = 0; j < length; j++) {
+                if (i + j >= length - 1)
+                {
+                    System.out.print("#");
+                }
+                else
+                {
+                    System.out.print(" ");
+                }
             }
-            for (j = 0; j <= i; j++) //  loop dalam kolom
-            {
-                System.out.print("#"); // print pagar
-            }
-            System.out.println(); // ending line
+            System.out.println();
         }
-
     }
 }
