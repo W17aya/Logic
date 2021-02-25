@@ -49,13 +49,13 @@ public class Main {
 //                case 10:
 //                    Exam10.Resolve();
 //                    break;
-//                case 11:
-//                    Mean.Resolve;
-//                    break;
-//                case 12:
-//                    Median.Resolve;
-//                    break;
-//                    case 13:
+                case 11:
+                    Exam11.Resolve();
+                    break;
+                case 12:
+                    Exam12.Resolve();
+                    break;
+//                 case 13:
 //                    Modulus.Resolve;
 //                    break;
                 default:
