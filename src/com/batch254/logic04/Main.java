@@ -32,8 +32,8 @@ public class Main {
                     Exam3.Resolve();
                     break;
 //                case 4:
-//                    DiagonalDifference.Resolve();
-//                    break;
+//                    Exam4.Resolve();
+            //        break;
 //                case 5:
 //                    PlusMinus.Resolve();
 //                    break;
@@ -55,15 +55,10 @@ public class Main {
 //                case 11:
 //                    Sorting.Resolve();
 //                    break;
-//                case 12:
-//                    Mean.Resolve();
-//                    break;
-//                 case 13:
-//                    Median.Resolve();
-//                    break;
-//                case 14:
-//                    Modus.Resolve();
-//                    break;
+                case 12:
+                    Exam12.Resolve();
+                    break;
+
                 default:
                     System.out.println("SOAL TIDAK DITEMUKAN");
                     break;
