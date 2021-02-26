@@ -18,7 +18,7 @@ public class Exam12 {
                 if(palindrome.equals(string)) {
                         System.out.println("String termasuk palindrome");
                 }
-                else if (!palindrome.equalsIgnoreCase(string))
+                else if (palindrome != (string))
                         System.out.println("String yang dimasukkan bukan palindrome ");
 
         }
