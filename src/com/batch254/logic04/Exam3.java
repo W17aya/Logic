@@ -10,10 +10,14 @@ public class Exam3 {
 
         System.out.println(" Input the plaintext message : ");
         String plaintext = sc.nextLine();
-        System.out.println(" Enter the value by whicheach character in the plaintext message gets shifted : ");
+
+        System.out.println(" Input Value Rotasi : ");
         int shift = sc.nextInt();
+
         String ciphertext = "";
+
         char alphabet;
+
         for(int i=0; i < plaintext.length();i++)
         {
             // Shift one character at a time

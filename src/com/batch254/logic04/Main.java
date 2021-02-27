@@ -22,9 +22,9 @@ public class Main {
             input.nextLine();
 
             switch (question) {
-//                case 1:
-//                    Exam1.Resolve();
-//                    break;
+                case 1:
+                    Exam1.Resolve();
+                    break;
                 case 2:
                     Exam2.Resolve();
                     break;

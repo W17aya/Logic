@@ -1,40 +1,24 @@
 package com.batch254.logic04;
 
+import java.util.Scanner;
+
+import static javafx.scene.input.KeyCode.S;
+import static sun.text.normalizer.NormalizerImpl.convert;
+
 public class Exam1 {
-    // to count spaces
-    int cnt= 0;
-    int n = s.length();
-    char ch[] = s.toCharArray();
-    int res_ind = 0;
+    public static void Resolve() {
 
-        for (int i = 0; i < n; i++)
-    {
+        Scanner in = new Scanner(System.in);
 
-        // check for spaces in the sentence
-        if (ch[i] == ' ')
-        {
-            cnt++;
-            // conversion into upper case
-            ch[i + 1] = Character.toUpperCase(ch[i + 1]);
-            continue;
+        String s = in.nextLine();
+        int count= 0 ;
+
+        for (int i = 0; i < s.length(); i++) {
+            if (Character.isUpperCase(s.charAt(i)))
+            {
+                count++;
+            }
         }
-
-        // If not space, copy character
-        else
-            ch[res_ind++] = ch[i];
+        System.out.println(count+1);
     }
-
-    // new string will be resuced by the
-    // size of spaces in the original string
-        return String.valueOf(ch, 0, n - cnt);
-}
-
-    // Driver code
-    public static void main(String args[])
-    {
-        String str = "I get intern at geeksforgeeks";
-        System.out.println(convert(str));
-    }
-}
-
 }

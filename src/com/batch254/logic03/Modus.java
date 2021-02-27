@@ -1,106 +1,46 @@
-//package com.batch254.logic03;
-//
-//import java.util.Scanner;
-//
-//public class Modus {
-//    public static void Resolve() {
-//
-//        Scanner input = new Scanner(System.in);
-//        int banyak;
-//
-//        int data[];
-//
-//        int x = 0;
-//
-//        int y = 0;
-//
-//        int a = 0;
-//
-//        int b = 0;
-//
-//        int jumlah = 0;
-//
-//
-//        // Mendeklarasikan sebuah array satu dimensi.
-//
-//        System.out.print("Banyaknya Data : ");
-//
-//        banyak = input.nextInt(); //Menginisialisai array.
-//
-//        data = new int[banyak]; //Mengakses nilai array dengan index tertentu.
-//
-//        for(int i=0;i<=banyak-1;i++){ //Proses perulangan.
-//
-//            System.out.print("Data ke-"+(i+1)+" : ");
-//
-//            data[i]= input.nextInt(); //Mengisi & Menampilkan isi array ke layar.
-//
-//        }
-//
-//
-//
-//        // Mengurutkan nilai array yang sudah dimasukkan.
-//
-//        System.out.print("Mengurutkan Data : ");
-//
-//        for(int i=0; i<=banyak-1; i++){ //Proses Perulangan.
-//
-//            System.out.print(data[i]+" "); //Memanggil & menampilkan nilai array.
-//
-//            jumlah = jumlah + data[i];
-//
-//        }
-//
-//        System.out.println("Jumlah Keseluruhan Data = "+jumlah);
-//
-//        jumlah=jumlah; //Menampilkan hasil jumlah antar array
-//
-//
-//
-//        // Mencari nilai MODUS dengan cara membandingkan.
-//
-//        for (int i=0; i<data.length ;i++){ //Proses perulangan
-//
-//            if(data[i]==banyak){
-//
-//                System.out.print(data[i]+" ");
-//
-//                System.out.println(++x);
-//
-//                a=x;
-//
-//            }
-//
-//            else{
-//
-//                System.out.print(data[i]+" ");
-//
-//                System.out.println(++y);
-//
-//                b=y;
-//
-//                b=data[i];
-//
-//            }
-//
-//        }
-//
-//        if(a<=b){
-//
-//            a=banyak;
-//
-//            System.out.println("Modus = "+a);
-//
-//        }
-//
-//        else{
-//
-//            System.out.println("Modus = "+b);
-//
-//        }
-//
-//
-//
-//    }
-//
-//}
+package com.batch254.logic03;
+
+import java.util.Scanner;
+
+public class Modus {
+    public static void Resolve(){
+        Scanner input = new Scanner(System.in);
+        System.out.print("Masukan Nilai : ");
+        String text = input.nextLine();
+
+        int[] number = Utility.StringToArrayInt(text);
+
+        int helper=0;
+        for (int i = 0; i < number.length; i++) {
+            for (int j = i + i; j < number.length; j++)
+                if (number[i] > number[j]) {
+                    helper = number[i];
+                    number[i] = number[j];
+                    number[j] = helper;
+                }
+        }
+        int temporary = 0;
+        int maksimum = 0;
+        String modus = "";
+
+        for (int i = 0; i < number.length - 1; i++)
+        {
+            if (number[i] == number[i + 1])
+            {
+                temporary++;
+            }
+            else if (temporary > maksimum)
+            {
+                maksimum = temporary;
+                modus = Integer.toString(number[i]);
+                temporary = 0;
+            } else if (temporary == maksimum)
+
+            {
+                modus += "" + (Integer.toString(number[number.length - 1]));
+                temporary = 0;
+            }
+        }
+        System.out.println("Nilai Modus : " + modus);
+    }
+}

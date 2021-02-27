@@ -35,7 +35,7 @@ public class DiagonalDifference {
             for (int j = 0; j < length; j++) {
                 if (i == j) {
                     System.out.print(nilai[i][j] + ", "); // cetak nilai yang masuk ke kondisi
-                    diagonal1 = diagonal1 + nilai[i][j]; //sum nilai yang ada di index i dan j jik kondisi true
+                    diagonal1 = diagonal1 + nilai[i][j]; //sum nilai yang ada di index i dan j jika kondisi true
                 }
             }
         }

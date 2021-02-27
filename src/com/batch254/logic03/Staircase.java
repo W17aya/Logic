@@ -8,7 +8,7 @@ public class Staircase {
 
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Enter a number");
+        System.out.println("Masukan angka yang akan dirubah menjadi piramida pagar: ");
         int length = input.nextInt();
 
         for (int i = 0; i < length; i++) {

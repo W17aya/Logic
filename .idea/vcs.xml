@@ -2,8 +2,5 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Lms-Xsis-Academy" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/src/LMS-XSIS-ACADEMY" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/src/com/LMS-XSIS-ACADEMY" vcs="Git" />
   </component>
 </project>

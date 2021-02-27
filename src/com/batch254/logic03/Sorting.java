@@ -18,7 +18,7 @@ public class Sorting {
             {
                 if (number[i] > number[j])
                 {
-                    tempt = number[i]; //memindahkan nilai i ke varaibel sementara
+                    tempt = number[i]; //memindahkan nilai i ke variabel sementara
                     number[i] = number[j];
                     number[j] = tempt;
                 }

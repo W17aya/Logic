@@ -13,13 +13,17 @@ public class Mean {
         double total = 0;
         double Hasil;
 
-        for (int i = 0; i < nilai.length; i++) {
+        for (int i = 0; i < nilai.length; i++)
+        {
             System.out.println("Masukan nilai" + (i + 1) +": ");
             nilai[i] = input.nextDouble();
         }
-        for (int i = 0; i < nilai.length; i++) {
+
+        for (int i = 0; i < nilai.length; i++)
+        {
             total = total + nilai[i];
         }
+
          Hasil = total / nilai.length;
         System.out.println("Jadi Nilai Rata-Rata:" + Hasil);
     }

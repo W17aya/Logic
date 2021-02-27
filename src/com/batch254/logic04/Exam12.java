@@ -15,11 +15,9 @@ public class Exam12 {
                         palindrome=palindrome+string.charAt(i);
                 }
                 System.out.println("Palindrome dari string : "+palindrome);
-                if(palindrome.equals(string)) {
+                if(palindrome.equals(string))
                         System.out.println("String termasuk palindrome");
-                }
                 else if (palindrome != (string))
                         System.out.println("String yang dimasukkan bukan palindrome ");
-
         }
 }

@@ -24,9 +24,9 @@ public class Main {
                 case 1:
                     SolveMeFirst.Resolve();
                     break;
-//                case 2:
-//                    Exam02.Resolve();
-//                    break;
+                case 2:
+                    TimeConversion.Resolve();
+                    break;
                 case 3:
                     SimpleArraySum.Resolve();
                     break;
@@ -43,14 +43,14 @@ public class Main {
                     MiniMaxSum.Resolve();
                     break;
                 case 8:
-                    Exam08.Resolve();
+                    BirthdayCakeCandles.Resolve();
                     break;
-//                case 9:
-//                    Exam09.Resolve();
-//                    break;
-//                case 10:
-//                    Exam10.Resolve();
-//                    break;
+                case 9:
+                    AVeryBigSum.Resolve();
+                    break;
+                case 10:
+                    CompareTheTriplets.Resolve();
+                    break;
                 case 11:
                     Sorting.Resolve();
                     break;

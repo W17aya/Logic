@@ -8,7 +8,7 @@ public class SimpleArraySum {
         Scanner input = new Scanner(System.in);
 
         //input angka yang akan diproses
-        System.out.println("Enter set of number:");
+        System.out.println("Masukan beberapa angka sekaligus:");
         String text = input.nextLine();
 
         int[] numbers = Utility.StringToArrayInt(text);
