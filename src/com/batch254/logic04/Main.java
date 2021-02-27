@@ -33,10 +33,10 @@ public class Main {
                     break;
 //                case 4:
 //                    Exam4.Resolve();
-            //        break;
-//                case 5:
-//                    PlusMinus.Resolve();
 //                    break;
+                case 5:
+                    Exam5.Resolve();
+                    break;
 //                case 6:
 //                    Staircase.Resolve();
 //                    break;
@@ -46,18 +46,21 @@ public class Main {
 //                case 8:
 //                    Exam08.Resolve();
 //                    break;
-////                case 9:
-////                    Exam09.Resolve();
-////                    break;
+                case 9:
+                    Exam9.Resolve();
+                    break;
 ////                case 10:
 ////                    Exam10.Resolve();
 ////                    break;
-//                case 11:
-//                    Sorting.Resolve();
-//                    break;
+                case 11:
+                    Exam11.Resolve();
+                    break;
                 case 12:
                     Exam12.Resolve();
                     break;
+//                    case 13;
+//                    Exam13.Resolve();
+//                    break;
 
                 default:
                     System.out.println("SOAL TIDAK DITEMUKAN");

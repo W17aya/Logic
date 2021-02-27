@@ -1,36 +1,27 @@
-//package com.batch254.logic04;
-//
-//import java.util.Scanner;
-//
-//public class Exam4 {
-//    public static void Resolve(){}
-//
-//
-//    Scanner input = new Scanner(System.in);
-//
-//
-//    String s = in.next();
-//    System.out.println("SOS"));
-//
-//
-//
-//    private static int countCorruptSymbols(String input, String pattern) {
-//
-//        int i = 0;
-//        int p = 0;
-//
-//        int count = 0;
-//        while (i < input.length()) {
-//
-//            if (input.charAt(i) != pattern.charAt(p)) {
-//                count++;
-//            }
-//
-//            i++;
-//            p = (p + 1) % pattern.length();
-//        }
-//
-//        return count;
-//
-//    }
-//}
+package com.batch254.logic04;
+
+import java.util.Scanner;
+
+public class Exam4 {
+    public static void Resolve() {
+
+
+        String S, O;
+        String bantuan;
+        Scanner input = new Scanner(System.in);
+
+
+
+        System.out.println("Masukkan kalimat: ");
+        String SOS = input.nextLine();
+
+        if (SOS.isEmpty()) ;
+        System.out.println("Kalimat kosong");
+
+        for (int i = 0; i < SOS.length; i++) {
+            for (int j = 0; j < SOS.length; j++) {
+
+            }
+        }
+    }
+}
