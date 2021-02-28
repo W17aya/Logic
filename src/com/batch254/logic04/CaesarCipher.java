@@ -2,7 +2,7 @@ package com.batch254.logic04;
 
 import java.util.Scanner;
 
-public class Exam3 {
+public class CaesarCipher {
     public static void Resolve() {
 
 
@@ -13,9 +13,7 @@ public class Exam3 {
 
         System.out.println(" Input Value Rotasi : ");
         int shift = input.nextInt();
-
         String ciphertext = "";
-
         char alphabet;
 
         for (int i = 0; i < plaintext.length(); i++) {

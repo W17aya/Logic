@@ -2,7 +2,7 @@ package com.batch254.logic04;
 
 import java.util.Scanner;
 
-public class Exam2 {
+public class StrongPassword {
     public static void Resolve() {
         Scanner input = new Scanner(System.in);
 

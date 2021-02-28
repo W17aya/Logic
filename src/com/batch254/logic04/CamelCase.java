@@ -3,7 +3,7 @@ package com.batch254.logic04;
 import java.util.Scanner;
 
 
-public class Exam1 {
+public class CamelCase {
     public static void Resolve() {
 
         Scanner input = new Scanner(System.in);

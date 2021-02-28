@@ -4,7 +4,7 @@ import sun.plugin2.message.JavaScriptCallMessage;
 
 import java.util.Scanner;
 
-public class Exam11 {
+public class Asteriks {
     public static void Resolve() {
         Scanner input = new Scanner(System.in);
         System.out.println("Masukkan kalimat: ");

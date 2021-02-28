@@ -1,8 +1,5 @@
 package com.batch254.logic04;
 
-import BirthdayCakeCandle.Exam08;
-import com.batch254.logic03.*;
-
 import java.util.Scanner;
 
 public class Main {
@@ -23,23 +20,23 @@ public class Main {
 
             switch (question) {
                 case 1:
-                    Exam1.Resolve();
+                    CamelCase.Resolve();
                     break;
                 case 2:
-                    Exam2.Resolve();
+                    StrongPassword.Resolve();
                     break;
                 case 3:
-                    Exam3.Resolve();
+                    CaesarCipher.Resolve();
                     break;
-//                case 4:
-//                    Exam4.Resolve();
-//                    break;
+                case 4:
+                    MarsExploration.Resolve();
+                    break;
                 case 5:
-                    Exam5.Resolve();
+                    HackerRankInAString.Resolve();
                     break;
-//                case 6:
-//                    Staircase.Resolve();
-//                    break;
+                case 6:
+                    Pangrams.Resolve();
+                    break;
 //                case 7:
 //                    MiniMaxSum.Resolve();
 //                    break;
@@ -47,21 +44,26 @@ public class Main {
 //                    Exam08.Resolve();
 //                    break;
                 case 9:
-                    Exam9.Resolve();
+                    MakingAnagrams.Resolve();
                     break;
 ////                case 10:
 ////                    Exam10.Resolve();
 ////                    break;
                 case 11:
-                    Exam11.Resolve();
+                    Asteriks.Resolve();
                     break;
                 case 12:
-                    Exam12.Resolve();
+                    Palindrome.Resolve();
                     break;
 //                    case 13;
 //                    Exam13.Resolve();
 //                    break;
-
+                case 14:
+                    Boolean.Resolve();
+                    break;
+//                case 15:
+//                    PasswordKuat.Resolve();
+//                    break;
                 default:
                     System.out.println("SOAL TIDAK DITEMUKAN");
                     break;

@@ -2,22 +2,22 @@ package com.batch254.logic04;
 
 import java.util.Scanner;
 
-public class Exam9 {
+public class MakingAnagrams {
     public static void Resolve(){
 
         Scanner scanner = new Scanner(System.in);
 
         // Getting the input string from the user
-        System.out.print("Enter the First String : ");
+        System.out.print("Masukan string pertama : ");
         String s1 = scanner.nextLine();
 
-        System.out.print("Enter the second String : ");
+        System.out.print("Masukan string kedua : ");
         String s2 = scanner.nextLine();
 
         if (checkAnagram(s1, s2))
-            System.out.println(s1 + " and " + s2 + " are Anagrams");
+            System.out.println(s1 + " and " + s2 + " adalah Anagrams");
         else
-            System.out.println(s1 + " and " + s2 + " are NOT Anagrams");
+            System.out.println(s1 + " and " + s2 + " bukan Anagrams");
 
         scanner.close();
     }
