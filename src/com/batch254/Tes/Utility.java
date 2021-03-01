@@ -6,7 +6,7 @@ public class Utility {
         String[] temp = text.split(",");
         int[] result = new int [temp.length];
 
-        //konfersi angka string ke angka integer berupa array
+        //konversi angka string ke angka integer berupa array
         for (int i = 0; i < result.length; i++) {
             result[i] = Integer.parseInt(temp[i]);
         }

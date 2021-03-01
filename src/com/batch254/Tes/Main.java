@@ -24,32 +24,32 @@ public class Main {
                     break;
                 case 2:
                     Parkir.Resolve();
-
-//                case 3:
-//                    Porsi.Resolve();
-//                    break;
-//                case 4:
-//                    Konversi.Resolve();
-//                    break;
-//                default:
-//                case 5:
-//                    KertasHVS.Resolve();
-//                    break;
-//                case 6:
-//                    OnlineShop.Resolve();
-//                    break;
-//                case 7:
-//                    Alphabets.Resolve();
-//                    break;
-//                case 8:
-//                    Delivery.Resolve();
-//                    break;
-//                case 9:
-//                    Ovo.Resolve();
-//                    break;
-//                case 10:
-//                    NinjaHatori.Resolve();
-//                    break;
+                break;
+                case 3:
+                    Porsi.Resolve();
+                    break;
+                case 4:
+                    Konversi.Resolve();
+                    break;
+                case 5:
+                    KertasHVS.Resolve();
+                    break;
+                case 6:
+                    OnlineShop.Resolve();
+                    break;
+                case 7:
+                    Alphabets.Resolve();
+                break;
+                case 8:
+                    Delivery.Resolve();
+                    break;
+                case 9:
+                    Ovo.Resolve();
+                    break;
+                case 10:
+                    NinjaHatori.Resolve();
+                    break;
+                default:
                     System.out.println("SOAL TIDAK DITEMUKAN");
                     break;
             }

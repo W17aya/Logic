@@ -1,70 +1,76 @@
 package com.batch254.Tes;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Scanner;
 
 public class Parkir {
-    public static void Resolve(){
+    public static void Resolve() {
+        Scanner input = new Scanner(System.in);
 
-        Scanner sc = new Scanner(System.in);
-        //array yang dibutuhkan
-        double []jamMasuk = new double[5];
-        double []menitMasuk = new double[5];
+        System.out.println("========== Parkir ==========");
+        System.out.println("============================");
 
-        double []jamKeluar = new double[5];
-        double []menitKeluar = new double[5];
-        double []bayar = new double[5];
-        double total = 0;
+        System.out.print("Input date in, Ex. 28 Jan 21 07:30:34: ");
+        String in = input.nextLine();
 
-        //masukkan data
-        for(int x=0; x<5; x++)
-        {
-            System.out.print("Jam Masuk    : ");
-            jamMasuk[x] = sc.nextDouble();
-            System.out.print("Menit Masuk    : ");
-            menitMasuk[x] = sc.nextDouble();
-            System.out.print("Jam Keluar    : ");
-            jamKeluar[x] = sc.nextDouble();
-            System.out.print("Menit Keluar    : ");
-            menitKeluar[x] = sc.nextDouble();
+        System.out.print("Input date out, Ex. 28 Jan 21 07:30:34: ");
+        String out = input.nextLine();
 
-            //hitung lama parkir untuk ditampilkan
-            Double jamParkir = (jamKeluar[x]-jamMasuk[x]);
-            Double menitParkir = (menitKeluar[x]-menitMasuk[x]);
-            if(menitParkir<0){
-                jamParkir = jamParkir-1;
-                menitParkir = menitParkir+60;
-            }
-            System.out.println("lama parkir    : "+jamParkir+"jam "+menitParkir+"menit");
+//        String in = "28 Jan 21 07:30:34";
+//        String out = "29 Jan 21 20:03:05";
+        Date dateIn = null;
+        Date dateOut = null;
 
-            //hitung lama parkir untuk hitung biaya
-            double lamaParkir = Math.ceil((((jamKeluar[x]*60)+menitKeluar[x])-((jamMasuk[x]*60)+menitMasuk[x]))/60);
+        long difference;
+        long hour;
+        long minute;
+        long second;
+        long price;
+        long restHour;
 
-            //hitung dan tampilkan biaya parkir
-            if(lamaParkir<2){bayar[x]=5000;
-            }else{bayar[x]=5000+((lamaParkir-2)*2000);}
-            System.out.println("Biaya Parkir    : "+bayar[x]);
-            System.out.println();
+        String strHour;
+        String strMinute;
+        String strSecond;
 
-            //hitung pendapatan
-            total = total+bayar[x];
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd MMM yy hh:mm:ss");
 
-            //next or stop
-            for(int cek=1;cek<=3;cek++){
-                System.out.print("Apakah ada yang lain? (y/t)    : ");
-                String lanjut = sc.next();
-                if(lanjut.equals("y")||lanjut.equals("Y")){cek=4;}
-                if(lanjut.equals("t")||lanjut.equals("T")){cek=4;x=5;}
-                if(!(lanjut.equals("t")||lanjut.equals("T")||lanjut.equals("y")||lanjut.equals("Y")))
-                {
-                    System.out.println("Masukkan hanya terdiri dari y atau t");
-                    System.out.println("Anda mempunyai "+(3-cek)+" kesempatan lagi");
-                    System.out.println();
-                    if(cek-3==0){x=5;}
-                }
-            }
-            System.out.println();
+        try {
+            dateIn = dateFormat.parse(in);
+            dateOut = dateFormat.parse(out);
+        } catch (Exception e) {
+            System.out.println("Format salah");
         }
 
-        System.out.println("Total Pendapatan Hari Ini : "+total);
+        difference = dateOut.getTime() - dateIn.getTime();
+        second = difference / 1000 % 60;
+        minute = difference / (60 * 1000) % 60;
+        hour = difference / (60 * 60 * 1000);
+        restHour = hour - 24;
+
+        strHour = Long.toString(hour);
+        strMinute = Long.toString(minute);
+        strSecond = Long.toString(second);
+
+        if (hour < 8) {
+            price = (hour * 1000) + (minute * (1000 / 60)) + (second * (1000 / (60 * 60)));
+            System.out.println(price);
+        } else if (hour > 8 && hour <= 24) {
+            price = (hour * 8000) + (minute * (8000 / 60)) + (second * (8000 / (60 * 60)));
+            System.out.println(price);
+        } else {
+            if (hour > 24) {
+                if (restHour < 8) {
+                    price = 15000 + (restHour * 1000) + (minute * (1000 / 60)) + (second * (1000 / (3600)));
+                    System.out.println(price);
+                } else if (restHour > 8 && restHour <= 24) {
+                    price = 15000 + (restHour * 8000) + (minute * (8000 / 60)) + (second * (8000 / (3600)));
+                    System.out.println(price);
+                } else {
+                    price = 15000 + (restHour * 1000) + (minute * (1000 / 60)) + (second * (1000 / (3600)));
+                    System.out.println(price);
+                }
+            }
+        }
     }
 }
